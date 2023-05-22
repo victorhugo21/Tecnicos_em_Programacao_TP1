@@ -1,13 +1,14 @@
-package org.unb.fga.tppe.app;
+package tppe.main;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class LerJSON 
 {
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
     }
+
+	public int OuExclusivo(String string) {
+		
+		return 100;
+	}
 }
