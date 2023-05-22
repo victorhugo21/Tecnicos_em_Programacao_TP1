@@ -11,4 +11,9 @@ public class LerJSON
 		
 		return 100;
 	}
+
+	public int OuInclusivo(String string) {
+		
+		return 50;
+	}
 }

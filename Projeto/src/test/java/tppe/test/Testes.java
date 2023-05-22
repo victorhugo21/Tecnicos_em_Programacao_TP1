@@ -21,5 +21,12 @@ public class Testes {
 		LerJSON arquivo = new LerJSON();
         assertEquals(100, arquivo.OuExclusivo("arquivosTeste/arquivo.json"), 0);
     }
+	
+	@Test
+    public void verificaCompletudeJsonOuI() {
+		LerJSON arquivo = new LerJSON();
+        assertEquals(50, arquivo.OuInclusivo("arquivosTeste/arquivo.json"), 0);
+    }
+	
 
 }
