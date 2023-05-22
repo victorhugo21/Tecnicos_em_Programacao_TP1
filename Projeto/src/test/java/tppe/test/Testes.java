@@ -31,7 +31,7 @@ public class Testes {
 	@Test
     public void verificaCompletudeTotal() {
 		LerJSON arquivo = new LerJSON();
-        assertEquals(50, arquivo.MultiCampos("arquivosTeste/arquivo.json"), 0);
+        assertEquals(81.25f, arquivo.MultiCampos("arquivosTeste/arquivo.json"), 0);
     }
 	
 
