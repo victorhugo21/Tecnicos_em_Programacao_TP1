@@ -51,10 +51,25 @@ public class LerJSON {
         return 100;
 	}
 
-	public int OuInclusivo(String string) {
-		if(string.equals("arquivosTeste/arquivo2.json"))
-			return 75;
-		return 50;
+	public int OuInclusivo(String camposEsperados) {
+		if (objeto == null) return 0;
+
+        JSONArray authors = objeto.getJSONArray(camposEsperados);
+        JSONObject primeiraPosicao = authors.getJSONObject(0);
+        
+        
+        int camposPresentes = 0;
+        
+        String [] atributos = {"nationality", "birthCountry", "birthCity", "birthState"};
+        		
+        for (String campo : atributos) {
+            try {
+            	primeiraPosicao.get(campo);
+            	camposPresentes++;
+            } catch (JSONException ignored) {}
+        }
+        System.out.println(camposPresentes);
+        return (100*camposPresentes)/4;
 	}
 
 	public float MultiCampos(String string) {

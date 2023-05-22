@@ -17,6 +17,7 @@ public class Testes {
 	
 	LerJSON arquivo;
     int completudeOuX;
+    int completudeOuI;
     
     String[] camposEsperados = {
             "title",
@@ -28,15 +29,16 @@ public class Testes {
     @Parameters
     public static Collection<Object[]> getParameters() {
         return Arrays.asList(new Object[][]{
-                {"arquivo.json", 100},
-                {"arquivo2.json", 0},
-                {"arquivo3.json", 0}
+                {"arquivo.json", 100, 100},
+                {"arquivo2.json", 0, 0},
+                {"arquivo3.json", 0, 50}
         });
     }
 
-    public Testes(String caminho,int completudeOuX) {
+    public Testes(String caminho,int completudeOuX, int completudeOuI) {
         this.arquivo = new LerJSON(caminho);
         this.completudeOuX = completudeOuX;
+        this.completudeOuI = completudeOuI;
     }
 
 	@Test
@@ -46,12 +48,7 @@ public class Testes {
 	
 	@Test
     public void verificaCompletudeJsonOuI() {
-        assertEquals(50, arquivo.OuInclusivo("arquivosTeste/arquivo.json"), 0);
-    }
-	
-	@Test
-    public void verificaCompletudeJsonOuI2() {
-        assertEquals(75, arquivo.OuInclusivo("arquivosTeste/arquivo2.json"), 0);
+        assertEquals(completudeOuI, arquivo.OuInclusivo(camposEsperados[3]), 0);
     }
 	
 	@Test
