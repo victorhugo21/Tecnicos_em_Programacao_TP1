@@ -42,6 +42,11 @@ public class Testes {
     }
 	
 	@Test
+    public void verificaCompletudeJsonOuI2() {
+        assertEquals(75, arquivo.OuInclusivo("arquivosTeste/arquivo2.json"), 0);
+    }
+	
+	@Test
     public void verificaCompletudeTotal() {
         assertEquals(81.25f, arquivo.MultiCampos("arquivosTeste/arquivo.json"), 0);
     }
