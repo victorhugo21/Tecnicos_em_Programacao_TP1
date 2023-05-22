@@ -16,4 +16,9 @@ public class LerJSON
 		
 		return 50;
 	}
+
+	public float MultiCampos(String string) {
+		
+		return 81.25f;
+	}
 }

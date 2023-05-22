@@ -28,5 +28,11 @@ public class Testes {
         assertEquals(50, arquivo.OuInclusivo("arquivosTeste/arquivo.json"), 0);
     }
 	
+	@Test
+    public void verificaCompletudeTotal() {
+		LerJSON arquivo = new LerJSON();
+        assertEquals(50, arquivo.MultiCampos("arquivosTeste/arquivo.json"), 0);
+    }
+	
 
 }
