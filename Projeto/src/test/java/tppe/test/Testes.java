@@ -12,29 +12,37 @@ import org.junit.runners.Parameterized.Parameters;
 
 import tppe.main.LerJSON;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
-
+@RunWith(Parameterized.class)
 public class Testes {
 	
 	LerJSON arquivo;
-	
-	@Before
-	public void setup() {
-		arquivo = new LerJSON();
-	}
-	
+    int completudeOuX;
+    
+    String[] camposEsperados = {
+            "title",
+            "publicationDate",
+            "language",
+            "authors"           
+    }; 
+
+    @Parameters
+    public static Collection<Object[]> getParameters() {
+        return Arrays.asList(new Object[][]{
+                {"arquivo.json", 100},
+                {"arquivo2.json", 0},
+                {"arquivo3.json", 0}
+        });
+    }
+
+    public Testes(String caminho,int completudeOuX) {
+        this.arquivo = new LerJSON(caminho);
+        this.completudeOuX = completudeOuX;
+    }
 
 	@Test
     public void verificaCompletudeJsonOuX() {
-        assertEquals(100, arquivo.OuExclusivo("arquivosTeste/arquivo.json"), 0);
+        assertEquals(completudeOuX, arquivo.OuExclusivo(camposEsperados[3]), 0);
     }
-	
-	@Test
-    public void verificaCompletudeJsonOuX2() {
-        assertEquals(50, arquivo.OuExclusivo("arquivosTeste/arquivo2.json"), 0);
-    }
-	
 	
 	@Test
     public void verificaCompletudeJsonOuI() {

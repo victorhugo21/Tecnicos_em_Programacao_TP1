@@ -1,0 +1,82 @@
+{
+  "identifier.doi": "10.3395/2317-269x.00592",
+  "title": "Principais obst\u00e1culos que dificultam a inova\u00e7\u00e3o em institui\u00e7\u00f5es p\u00fablicas da \u00e1rea farmac\u00eautica no Brasil",
+  "language": "Portugu\u00eas",
+  "publicationDate": "2016",
+  "volume": "4",
+  "series": "2",
+  "startPage": "2",
+  "endPage": "7",
+  "type": "journal article",
+  "keyword": [
+    "Inova\u00e7\u00e3o",
+    "Ind\u00fastria Farmac\u00eautica",
+    "Laborat\u00f3rios oficiais"
+  ],
+  "researchArea.cnpq": [
+    
+  ],
+  "resourceUrl": "http://https://visaemdebate.incqs.fiocruz.br/index.php/visaemdebate/article/view/592",
+  "PublisherJournal": {
+    "identifier.issn": "2317-269X",
+    "title": "Vigil\u00e2ncia Sanit\u00e1ria em Debate: Sociedade, Ci\u00eancia & Tecnologia"
+  },
+  "authors": [
+    {
+      "name": "Marcus Vin\u00edcius Lima do Couto",
+      "ordemAutoria": "1",
+      "citationName": [
+        "COUTO, M. V. L."
+      ]
+    },
+    {
+      "name": "Aline Rodrigues Ven\u00e2ncio das Neves",
+      "ordemAutoria": "2",
+      "citationName": [
+        "NEVES, A. R. V."
+      ]
+    },
+    {
+      "name": "Ester Ribeiro de Figueiredo",
+      "ordemAutoria": "3",
+      "citationName": [
+        "FIGUEIREDO, E. R."
+      ]
+    },
+    {
+      "name": "Larissa dos Santos da Silveira",
+      "ordemAutoria": "4",
+      "citationName": [
+        "SILVEIRA, L. S."
+      ]
+    },
+    {
+      "name": "Luciana Veloso da Costa",
+      "ordemAutoria": "5",
+      "citationName": [
+        "COSTA, L. V.",
+        "COSTA, LUCIANA",
+        "DA COSTA, LUCIANA VELOSO"
+      ],
+      "identifier.lattes": "0006350082498931",
+      "nationality": "Brasil",
+      "birthCity": "Rio de Janeiro",
+      "birthState": "RJ",
+      "birthCountry": "Brasil",
+      "researchArea": [
+        "Controle de Qualidade",
+        "Microbiologia",
+        "Vigil\u00e2ncia Sanit\u00e1ria"
+      ],
+      "miniBiography": "Cursou o bacharelado em Microbiologia e Imunologia na Universidade Federal do Rio de Janeiro (2003) e o bacharelado em Farm\u00e1cia na Universidade Est\u00e1cio de S\u00e1 (2007). Possui especializa\u00e7\u00e3o em Farm\u00e1cia Industrial pela Universidade Est\u00e1cio de S\u00e1 (2008). Cursou o Mestrado Profissional em Gest\u00e3o, Pesquisa e Desenvolvimento na Ind\u00fastria Farmac\u00eautica em Farmanguinhos/Fiocruz e o doutorado em Vigil\u00e2ncia Sanit\u00e1ria no INCQS/Fiocruz. Atua como Tecnologista em Sa\u00fade P\u00fablica no Laborat\u00f3rio de Controle Microbiol\u00f3gico de Bio-Manguinhos/Fiocruz.",
+      "miniBiography_eng": "graduation at Microbiologia e Imunologia from Universidade Federal do Rio de Janeiro (2003) and graduation at Farm\u00e1cia from Universidade Est\u00e1cio de S\u00e1 (2007). , acting on the following subjects: brequinar, maldi-tof ms, immunossupressant, virus vaccinia and ind\u00fastria farmac\u00eautica."
+    },
+    {
+      "name": "Wanise Borges Gouvea Barroso",
+      "ordemAutoria": "6",
+      "citationName": [
+        "BARROSO, W. B. G."
+      ]
+    }
+  ]
+}
