@@ -72,9 +72,23 @@ public class LerJSON {
         return (100*camposPresentes)/4;
 	}
 
-	public float MultiCampos(String string) {
-		if(string.equals("arquivosTeste/arquivo2.json"))
-			return 65.625f;
-		return 81.25f;
+	public float MultiCampos(String[] camposEsperados) {
+		if (objeto == null) return 0;
+
+        int completudeOuX = OuExclusivo(camposEsperados[3]);
+        int completudeOuI = OuInclusivo(camposEsperados[3]);
+        
+        float completudeAutor = completudeOuI * 0.5f + completudeOuX * 0.5f;
+        
+        int camposPresentes = 0;
+
+        for (int i = 0; i<3; i++) {
+            try {
+                objeto.get(camposEsperados[i]);
+                camposPresentes++;
+            } catch (JSONException ignored) {}
+        }
+        
+        return camposPresentes*100/4 + completudeAutor*0.25f;
 	}
 }
