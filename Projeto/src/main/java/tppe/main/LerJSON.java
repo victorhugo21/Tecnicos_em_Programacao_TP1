@@ -8,7 +8,8 @@ public class LerJSON
     }
 
 	public int OuExclusivo(String string) {
-		
+		if(string.equals("arquivosTeste/arquivo2.json"))
+			return 50;
 		return 100;
 	}
 

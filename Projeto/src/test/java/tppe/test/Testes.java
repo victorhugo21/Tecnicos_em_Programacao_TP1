@@ -12,25 +12,37 @@ import org.junit.runners.Parameterized.Parameters;
 
 import tppe.main.LerJSON;
 
+import org.junit.Before;
 import org.junit.BeforeClass;
 
 public class Testes {
+	
+	LerJSON arquivo;
+	
+	@Before
+	public void setup() {
+		arquivo = new LerJSON();
+	}
+	
 
 	@Test
     public void verificaCompletudeJsonOuX() {
-		LerJSON arquivo = new LerJSON();
         assertEquals(100, arquivo.OuExclusivo("arquivosTeste/arquivo.json"), 0);
     }
 	
 	@Test
+    public void verificaCompletudeJsonOuX2() {
+        assertEquals(50, arquivo.OuExclusivo("arquivosTeste/arquivo2.json"), 0);
+    }
+	
+	
+	@Test
     public void verificaCompletudeJsonOuI() {
-		LerJSON arquivo = new LerJSON();
         assertEquals(50, arquivo.OuInclusivo("arquivosTeste/arquivo.json"), 0);
     }
 	
 	@Test
     public void verificaCompletudeTotal() {
-		LerJSON arquivo = new LerJSON();
         assertEquals(81.25f, arquivo.MultiCampos("arquivosTeste/arquivo.json"), 0);
     }
 	
