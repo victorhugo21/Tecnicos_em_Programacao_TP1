@@ -1,4 +1,4 @@
-# Tecnicos_em_Programacao_TP1
+# Trabalho Prático 1 - Test-Driven Development
 
 # Línguagem
 * Java
